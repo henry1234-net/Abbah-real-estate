@@ -3,7 +3,7 @@ import React from 'react'
 export default function Navigation(){
   return (
     <div>
-      <nav className='flex flex-row justify-around items-center w-full h-14 bg-abbah-milk text-lg text-abbah-main-green font-medium rounded-lg'>
+      <nav className='flex flex-row justify-around items-center w-full h-14 bg-white/30 backdrop-blur-sm text-lg text-abbah-main-green font-medium rounded-lg'>
         <div className='mr-10 hover:cursor-pointer'>Abbah Homes</div>
         <ul className='md:flex flex-row justify-around w-[40%] hidden'>
           <li className='group'><a href="#" className=''>Home</a></li>
