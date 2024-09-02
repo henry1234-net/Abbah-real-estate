@@ -26,6 +26,62 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+.custom-fixed{
+  left: calc(0.75rem);
+  right: calc(0.75rem);
+}
+
+li{position: relative;}
+
+li::after{
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  transition: .5s ease;
+}
+
+li:hover::after{
+  content: '';
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  background-color: #ff4040;
+}
+
+li a{
+  padding: 17px 0;
+}
+
+li a:hover, .dropholder a.dropdown:hover::after {
+  color: #ff4040;
+}
+
+.dropholder a.dropdown::after{
+  content: '\25BC';
+  color: #228b22;
+  font-size: 12px;
+  margin-left: 5px;
+}
+
+.dropholder div{
+  border: 1px solid #228b22;
+}
+
+.dropholder:hover .drop{display: block;}
+
+.drop{display: none;}
+
+.drop ul li:not(:last-of-type) {
+  border-bottom: 1px solid #228b22;
+}
+
+.drop ul li:hover{border: none;}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
