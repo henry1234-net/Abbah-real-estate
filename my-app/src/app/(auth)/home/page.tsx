@@ -17,7 +17,7 @@ export default function LoginPage() {
               <button className='bg-abbah-main-green p-2 rounded-md ml-6 hover:scale-[1.02]'>Contact Us</button>
             </div>
 
-            <div className="flex flex-row items-center justify-between text-center mt-[30px] text-abbah-main-green text-xl font-semibold bg-abbah-main-green/10 backdrop-blur-sm border border-abbah-main-green py-2 px-4 rounded-md md:w-[90%] w-screen">
+            <div className="flex flex-row items-center md:justify-between justify-center text-center mt-[30px] text-abbah-main-green text-xl font-semibold bg-abbah-main-green/10 backdrop-blur-sm border border-abbah-main-green py-2 px-4 rounded-md md:w-[90%] w-screen">
               <div className="flex flex-col">
                 <p>17k+</p>
                 <p>Satisfied Customers</p>
