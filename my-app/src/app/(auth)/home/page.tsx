@@ -7,8 +7,8 @@ export default function LoginPage() {
   return (
     <div className='relative p-3 max-w-screen'>
         <Navigation />
-        <div className='bg-[#f5f5dc] mt-5 mb-[2vw] p-3 rounded-lg flex md:flex-row flex-col'>
-          <div className="md:w-1/2 w-full block mx-auto my-5 text-left p-10 relative">
+        <div className='bg-abbah-milk/50 mt-5 mb-[2vw] p-3 rounded-lg flex md:flex-row flex-col'>
+          <div className="md:w-1/2 h-fit w-full block mx-auto my-5 text-left p-10 relative">
             <h2 className='text-abbah-black-100 text-[40px] font-semibold'>Find your way <span className='text-abbah-main-green font-bold'>Home</span> with us</h2>
             <p className='text-xl mt-4'>Your journey to finding the perfect property starts here. Explore our listings to find your dream home or reach out to us for personalized assistance.</p>
 
@@ -41,7 +41,7 @@ export default function LoginPage() {
             />
           </div>
         </div>
-        <div className='w-full h-[80vh] bg-[#f5f5dc] mt-4 p-2 rounded-lg'>How are you</div>
+        <div className='w-full h-[80vh] bg-abbah-milk/50 mt-4 p-2 rounded-lg'>How are you</div>
     </div>
   )
 }
