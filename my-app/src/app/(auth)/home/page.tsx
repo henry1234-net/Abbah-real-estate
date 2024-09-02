@@ -32,7 +32,7 @@ export default function LoginPage() {
               </div>
             </div>
           </div>
-          <div className="md:w-1/2 w-full md:h-70vh mt-[100px] md:mt-0">
+          <div className="md:w-1/2 w-full md:h-70vh">
             <Image
             src='/HeroImg.png'
             alt='Hero Image'
