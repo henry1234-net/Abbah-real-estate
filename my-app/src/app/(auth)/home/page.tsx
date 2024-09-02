@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 export default function LoginPage() {
   return (
-    <div className='relative p-3'>
+    <div className='relative p-3 max-w-screen'>
         <Navigation />
         <div className='max-w-screen min-h-[82vh] bg-[#f5f5dc] mt-5 mb-[2vw] p-3 rounded-lg flex flex-row'>
           <div className="w-1/2 block my-5 text-left p-10 relative">
