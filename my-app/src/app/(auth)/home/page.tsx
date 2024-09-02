@@ -7,8 +7,8 @@ export default function LoginPage() {
   return (
     <div className='relative p-3 max-w-screen'>
         <Navigation />
-        <div className='max-w-screen min-h-[82vh] bg-[#f5f5dc] mt-5 mb-[2vw] p-3 rounded-lg flex flex-row'>
-          <div className="w-1/2 block my-5 text-left p-10 relative">
+        <div className='max-w-screen min-h-[82vh] bg-[#f5f5dc] mt-5 mb-[2vw] p-3 rounded-lg flex md:flex-row flex-col'>
+          <div className="md:w-1/2 w-full block my-5 text-left p-10 relative">
             <h2 className='text-abbah-black-100 text-[40px] font-semibold'>Find your way <span className='text-abbah-main-green font-bold'>Home</span> with us</h2>
             <p className='text-xl mt-4'>Your journey to finding the perfect property starts here. Explore our listings to find your dream home or reach out to us for personalized assistance.</p>
 
@@ -32,7 +32,7 @@ export default function LoginPage() {
               </div>
             </div>
           </div>
-          <div className="w-1/2 h-70vh relative">
+          <div className="md:w-1/2 w-full h-70vh relative">
             <Image
             src='/HeroImg.png'
             alt='Hero Image'
