@@ -4,7 +4,7 @@ import Navigation from '@/components/navbar';
 import Image from 'next/image';
 
 export default function LoginPage() {
-const allImage = ['/HeroImg.png', '/HeroImg.png', '/HeroImg.png', '/HeroImg.png', '/HeroImg.png', '/HeroImg.png', '/HeroImg.png']
+const allImage = ['/HeroImg.png', '/HeroImg.png', '/HeroImg.png', '/HeroImg.png', '/HeroImg.png', '/HeroImg.png']
   return (
     <div className='p-3 max-w-screen'>
       <Navigation />
