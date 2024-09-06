@@ -7,7 +7,7 @@ export default function LoginPage() {
   return (
     <div className='p-3 max-w-screen'>
       <Navigation />
-      <div className='bg-abbah-milk/50 flex md:flex-row flex-col relative'>
+      <div className='bg-abbah-milk/50 flex md:flex-row flex-col relative max-h-screen'>
         <div className="md:w-1/2 h-full md:mt-[4%] text-left p-4 md:relative">
           <h2 className='text-abbah-black-100 md:text-[40px] text-[30px] font-semibold'>
             Find your way <span className='text-abbah-main-green font-bold'>Home</span> with us
