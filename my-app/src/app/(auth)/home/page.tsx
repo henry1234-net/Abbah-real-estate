@@ -77,10 +77,10 @@ export default function LoginPage() {
                   <span className='text-abbah-light-green'> ₦1,000,000</span> anually
                 </div>
                 <hr className='my-2'/>
-                <span className='flex flex-row flex-nowrap justify-between w-fit'>
-                  <span className='mx-1'>🛏 3 bedrooms</span>
-                  <span className='mx-1'>🚽 4 bathrooms</span>
-                  <span className='mx-1'>📐 1,000sqm</span>
+                <span className='flex flex-row justify-between'>
+                  <span className='mx-1 whitespace-nowrap'>🛏 3 bedrooms</span>
+                  <span className='mx-1 whitespace-nowrap'>🚽 4 bathrooms</span>
+                  <span className='mx-1 whitespace-nowrap'>📐 1,000sqm</span>
                 </span>
               </div>
             </div>
