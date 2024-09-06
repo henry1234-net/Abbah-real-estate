@@ -45,8 +45,8 @@ export default function LoginPage() {
             src='/HeroImg.png'
             alt='Hero Image'
             layout='responsive'
-            width={700} // Replace with your image width
-            height={500} // Replace with your image height
+            width={700}
+            height={500}
             objectFit='contain'
           />
         </div>
