@@ -61,7 +61,7 @@ export default function LoginPage() {
 
         <div className='flex flex-row overflow-x-scroll'>
           {allImage.map((imageSrc, index) => (
-            <div key={index} className='bg-abbah-milk/30 rounded-md mx-2 relative my-3'>
+            <div key={index} className='bg-abbah-milk/20 rounded-md mx-2 relative my-3'>
               <div className='bg-abbah-milk/50 rounded-md h-[180px] flex-shrink-0 relative'>
                 <Image
                   src={imageSrc}
