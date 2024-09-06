@@ -9,7 +9,7 @@ export default function LoginPage() {
   return (
     <div className='p-3 max-w-screen'>
       <Navigation />
-      <div className='bg-abbah-milk flex md:flex-row flex-col relative rounded-md'>
+      <div className='bg-abbah-milk/50 flex md:flex-row flex-col relative rounded-md'>
         <div className="md:w-1/2 h-full md:mt-[4%] text-left p-4 md:relative">
           <h2 className='text-abbah-black-100 md:text-[40px] text-[30px] font-semibold'>
             Find your way <span className='text-abbah-main-green font-bold'>Home</span> with us
@@ -61,8 +61,8 @@ export default function LoginPage() {
 
         <div className='flex flex-row overflow-x-scroll'>
           {allImage.map((imageSrc, index) => (
-            <div key={index} className='bg-abbah-milk/20 rounded-md mx-2 relative my-3'>
-              <div className='bg-abbah-milk rounded-md h-[180px] flex-shrink-0 relative'>
+            <div key={index} className='bg-abbah-milk/30 rounded-md mx-2 relative my-3'>
+              <div className='bg-abbah-milk/50 rounded-md h-[180px] flex-shrink-0 relative'>
                 <Image
                   src={imageSrc}
                   alt={`image ${index + 1}`}
