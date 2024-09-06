@@ -4,7 +4,8 @@ import Navigation from '@/components/navbar';
 import Image from 'next/image';
 
 export default function LoginPage() {
-const allImage = ['/HeroImg.png', '/HeroImg.png', '/HeroImg.png', '/HeroImg.png', '/HeroImg.png', '/HeroImg.png']
+  const allImage = ['/HeroImg.png', '/HeroImg.png', '/HeroImg.png', '/HeroImg.png', '/HeroImg.png', '/HeroImg.png'];
+
   return (
     <div className='p-3 max-w-screen'>
       <Navigation />
@@ -41,6 +42,7 @@ const allImage = ['/HeroImg.png', '/HeroImg.png', '/HeroImg.png', '/HeroImg.png'
             </div>
           </div>
         </div>
+
         <div className="md:w-1/2 h-fit relative order-first md:order-last">
           <Image
             src={allImage[0]}
@@ -52,14 +54,15 @@ const allImage = ['/HeroImg.png', '/HeroImg.png', '/HeroImg.png', '/HeroImg.png'
           />
         </div>
       </div>
+
       <div className='w-full h-fit flex flex-col bg-abbah-milk/50 mt-4 p-2 rounded-lg overflow-hidden'>
         <span className='text-[9px] text-abbah-light-green'>Best Choice</span>
         Popular Residences
 
         <div className='flex flex-row overflow-x-scroll'>
-          {allImage.map((imageSrc, index) =>(
-            <div className='bg-white rounded-md mx-2 relative my-3'>
-              <div key={index} className='bg-abbah-milk rounded-md h-[180px] flex-shrink-0 relative'>
+          {allImage.map((imageSrc, index) => (
+            <div key={index} className='bg-white rounded-md mx-2 relative my-3'>
+              <div className='bg-abbah-milk rounded-md h-[180px] flex-shrink-0 relative'>
                 <Image
                   src={imageSrc}
                   alt={`image ${index + 1}`}
@@ -68,9 +71,11 @@ const allImage = ['/HeroImg.png', '/HeroImg.png', '/HeroImg.png', '/HeroImg.png'
                   objectFit='cover'
                 />
               </div>
-              <div key={index} className='flex flex-col text-xs p-4'>
-                Abbah Estate, kubwa, Abuja
-                <span></span><span className='text-abbah-light-green'> ₦1,000,000</span>/month</span>
+              <div className='flex flex-col text-xs p-4'>
+                <div>
+                  Abbah Estate, kubwa, Abuja
+                  <span className='text-abbah-light-green'> ₦1,000,000</span>/month
+                </div>
                 <hr className='my-2'/>
                 <span className='flex flex-row justify-between'>
                   <span className='mx-1'>🛏 3 bedrooms</span>
@@ -78,8 +83,8 @@ const allImage = ['/HeroImg.png', '/HeroImg.png', '/HeroImg.png', '/HeroImg.png'
                   <span className='mx-1'>📐 1,000sqm</span>
                 </span>
               </div>
-          )
-          )}
+            </div>
+          ))}
         </div>
       </div>
     </div>
