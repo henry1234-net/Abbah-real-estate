@@ -74,10 +74,10 @@ export default function LoginPage() {
               <div className='flex flex-col text-xs p-4'>
                 <div>
                   Abbah Estate, kubwa, Abuja
-                  <span className='text-abbah-light-green'> ₦1,000,000</span>/month
+                  <span className='text-abbah-light-green'> ₦1,000,000</span> anually
                 </div>
                 <hr className='my-2'/>
-                <span className='flex flex-row justify-between w-fit'>
+                <span className='flex flex-row flex-nowrap justify-between w-fit'>
                   <span className='mx-1'>🛏 3 bedrooms</span>
                   <span className='mx-1'>🚽 4 bathrooms</span>
                   <span className='mx-1'>📐 1,000sqm</span>
