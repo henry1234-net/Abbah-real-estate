@@ -55,7 +55,7 @@ export default function LoginPage() {
         </div>
       </div>
 
-      <div className='w-full h-fit flex flex-col bg-abbah-milk/50 mt-4 p-2 rounded-lg overflow-hidden'>
+      <div className='w-full h-fit flex flex-col bg-abbah-white mt-4 p-2 rounded-lg overflow-hidden'>
         <span className='text-[9px] text-abbah-light-green'>Best Choice</span>
         Popular Residences
 
