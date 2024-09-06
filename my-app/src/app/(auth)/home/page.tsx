@@ -68,7 +68,7 @@ export default function LoginPage() {
                   alt={`image ${index + 1}`}
                   layout='fill'
                   className='rounded-md'
-                  objectFit='cover'
+                  objectFit='contain'
                 />
               </div>
               <div className='flex flex-col text-xs p-4'>
