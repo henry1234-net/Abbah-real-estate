@@ -25,7 +25,7 @@ export default function LoginPage() {
             </button>
           </div>
 
-          <div className="flex flex-row items-center justify-center text-center mt-[30px] text-abbah-main-green md:text-xl text-xs font-semibold bg-abbah-main-green/10 backdrop-blur-sm border border-abbah-main-green p-2 rounded-md md:w-[90%] w-full">
+          <div className="flex flex-row items-center justify-around text-center mt-[30px] text-abbah-main-green md:text-xl text-xs font-semibold bg-abbah-main-green/10 backdrop-blur-sm border border-abbah-main-green p-2 rounded-md md:w-[90%] w-full">
             <div className="flex flex-col">
               <p>17k+</p>
               <p>Satisfied Customers</p>
