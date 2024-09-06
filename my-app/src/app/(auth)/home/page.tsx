@@ -78,7 +78,6 @@ const allImage = ['/HeroImg.png', '/HeroImg.png', '/HeroImg.png', '/HeroImg.png'
                   <span className='mx-1'>📐 1,000sqm</span>
                 </span>
               </div>
-            </div>
           )
           )}
         </div>
