@@ -50,7 +50,7 @@ li:hover::after{
   position: absolute;
   bottom: -2px;
   left: 0;
-  background-color: #ff4040;
+  background-color: #34d334;
 }
 
 li a{
@@ -58,7 +58,16 @@ li a{
 }
 
 li a:hover, .dropholder a.dropdown:hover::after {
-  color: #ff4040;
+  color: #34d334;
+}
+
+.drop{
+  display: none;
+  width: 100%;
+}
+
+.dropholder:hover .drop{
+  display: block;
 }
 
 .dropholder a.dropdown::after{
@@ -67,14 +76,6 @@ li a:hover, .dropholder a.dropdown:hover::after {
   font-size: 12px;
   margin-left: 5px;
 }
-
-.dropholder div{
-  border: 1px solid #228b22;
-}
-
-.dropholder:hover .drop{display: block;}
-
-.drop{display: none;}
 
 .drop ul li:not(:last-of-type) {
   border-bottom: 1px solid #228b22;

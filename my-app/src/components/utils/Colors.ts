@@ -6,6 +6,7 @@ export const abbahDarkgrey = "#645D5D";
 export const abbahWhite = "#ffffff";
 export const abbahMilk = "#f5f5dc";
 export const abbahRed = "#e23939";
+export const abbahDarkRed = "#791e1e";
 export const abbahBlack ={
   100: "#000800",
   200: "#0D0D0D",

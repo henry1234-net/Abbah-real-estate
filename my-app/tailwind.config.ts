@@ -14,8 +14,9 @@ const config: Config = {
         "abbah-light-green": "#34d334",
         "abbah-dark-slate": "#101928",
         "abbah-dark-grey": "#645D5D",
-        "abbah-milk": "#f5f5dc",
+        "abbah-milk": "#edf2f7",
         "abbah-red": "#e23939",
+        "abbah-dark-red": "#791e1e",
         "abbah-black": {
           100: "#000800",
           200: "#0D0D0D",
