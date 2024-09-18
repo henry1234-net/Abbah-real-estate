@@ -22,10 +22,10 @@ export default function LoginPage() {
           </p>
 
           <div className='flex flex-row items-center mt-10 md:text-lg text-base text-abbah-milk'>
-            <button className='bg-abbah-red border-2 border-abbah-milk hover:border-abbah-dark-red py-2 px-4 rounded-md mr-6 transition-transform'>
+            <button className='bg-abbah-red border-1 border-abbah-milk hover:border-abbah-dark-red py-2 px-4 rounded-md mr-6 transition-transform'>
               Explore Listings
             </button>
-            <button className='bg-abbah-main-green border-2 border-abbah-milk hover:border-abbah-dark-green py-2 px-4 rounded-md ml-6 transition-transform'>
+            <button className='bg-abbah-main-green border-1 border-abbah-milk hover:border-abbah-dark-green py-2 px-4 rounded-md ml-6 transition-transform'>
               Contact Us
             </button>
           </div>
