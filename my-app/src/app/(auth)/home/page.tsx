@@ -30,12 +30,12 @@ export default function LoginPage() {
             </button>
           </div>
 
-          <div className="flex md:flex-row flex-col items-center justify-around text-center mt-[30px] text-abbah-main-green md:text-xl text-base font-semibold bg-abbah-main-green/10 backdrop-blur-sm border border-abbah-main-green p-2 rounded-md md:w-[95%] w-full md:mt-[15%]">
-            <div className="flex flex-col">
+          <div className="flex md:flex-row flex-col items-center justify-around text-center mt-[30px] text-abbah-main-green md:text-xl text-md font-semibold bg-abbah-main-green/10 backdrop-blur-sm border border-abbah-main-green p-2 rounded-md md:w-[95%] w-full md:mt-[15%]">
+            <div className="flex flex-col mb-2">
               <p>17k+</p>
               <p>Satisfied Customers</p>
             </div>
-            <div className="flex flex-col">
+            <div className="flex flex-col mb-2">
               <p>30+</p>
               <p>Years of Experience</p>
             </div>
