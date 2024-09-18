@@ -87,7 +87,7 @@ export default function LoginPage() {
         </div>
       </div>
 
-      <div className='bg-abbah-milk/50 flex md:flex-row flex-col relative rounded-md z-0 mt-14 p-3 w-full'>
+      <div className='bg-abbah-milk/50 block md:flex-row flex-col relative rounded-md z-0 mt-8 mx-5 my-auto p-3 w-full'>
         
       </div>
     </div>
