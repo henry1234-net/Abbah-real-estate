@@ -14,7 +14,7 @@ export default function LoginPage() {
       </div>
       <div className='bg-abbah-milk/50 flex md:flex-row flex-col relative rounded-md z-0 mt-14 p-3 w-full'>
         <div className="md:w-1/2 h-full md:mt-[4%] p-4 md:relative">
-          <h2 className='text-abbah-black-100 md:text-[40px] text-[30px] text-center font-semibold'>
+          <h2 className='text-abbah-black-100 md:text-[40px] text-[25px] text-center font-semibold'>
             Find your way <span className='text-abbah-main-green font-bold'>Home</span> with us
           </h2>
           <p className='md:text-xl text-lg mt-4 text-justify'>
