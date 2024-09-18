@@ -2,14 +2,16 @@ import React from 'react';
 import '@/app/globals.css';
 import Navigation from '@/components/navbar';
 import Image from 'next/image';
-import '@/app/(auth)/scrollbar.css'
+import '@/app/(auth)/scrollbar.css';
 
 export default function LoginPage() {
   const allImage = ['/HeroImg.png', '/HeroImg.png', '/HeroImg.png', '/HeroImg.png', '/HeroImg.png', '/HeroImg.png'];
 
   return (
-    <div className='max-w-screen'>
-      <Navigation/>
+    <div className='max-w-screen relative'>
+      <div className="fixed top-0 left-0 z-10 w-full flex flex-col items-center justify-center"> 
+        <Navigation /> 
+      </div>
       <div className='bg-abbah-milk/50 flex md:flex-row flex-col relative rounded-md z-0 mt-14 p-3 w-full'>
         <div className="md:w-1/2 h-full md:mt-[4%] text-left p-4 md:relative">
           <h2 className='text-abbah-black-100 md:text-[40px] text-[30px] font-semibold'>
@@ -73,8 +75,8 @@ export default function LoginPage() {
                 />
               </div>
               <div className='flex flex-col text-xs p-4'>
-                  Abbah Estate, kubwa, Abuja
-                  <span className='flex flex-row'><span className='text-abbah-light-green'> ₦1,000,000</span>/year</span>
+                Abbah Estate, kubwa, Abuja
+                <span className='flex flex-row'><span className='text-abbah-light-green'> ₦1,000,000</span>/year</span>
                 <hr className='my-2'/>
                 <span className='flex flex-row justify-between'>
                   <span className='mx-1 whitespace-nowrap'>🛏 3 bedrooms</span>
@@ -87,8 +89,8 @@ export default function LoginPage() {
         </div>
       </div>
 
-      <div className='bg-abbah-milk/50 block md:flex-row flex-col relative rounded-md z-0 mt-8 mx-5 my-auto p-3 w-full'>
-        
+      <div className='bg-abbah-milk/50 block md:flex-row relative rounded-md z-0 mt-8 p-3 w-full'>
+        {/* Additional content can go here */}
       </div>
     </div>
   );

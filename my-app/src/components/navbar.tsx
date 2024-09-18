@@ -2,8 +2,8 @@ import React from 'react'
 
 export default function Navigation(){
   return (
-    <div className='z-10 fixed w-screen top-0'>
-      <nav className='flex flex-row justify-around items-center w-screen h-14 bg-white/30 backdrop-blur-lg text-lg text-abbah-main-green font-medium rounded-lg'>
+    <div>
+      <nav className='flex flex-row justify-around items-center w-screen h-14 bg-white shadow-md text-lg text-abbah-main-green font-medium rounded-lg'>
         <div className='mr-10 hover:cursor-pointer'>Abbah Homes</div>
         <ul className='md:flex flex-row justify-around w-[40%] hidden'>
           <li className='group'><a href="#" className=''>Home</a></li>
