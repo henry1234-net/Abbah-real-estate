@@ -12,9 +12,9 @@ export default function LoginPage() {
       <div className="fixed top-0 left-0 z-10 w-full flex flex-col items-center justify-center"> 
         <Navigation /> 
       </div>
-      <div className='bg-abbah-milk/50 flex md:flex-row flex-col relative rounded-md z-0 mt-14 p-3 w-full'>
+      <div className='bg-abbah-milk/50 flex md:flex-row flex-col relative rounded-md z-0 pt-16 p-3 w-full h-screen'>
         <div className="md:w-1/2 h-full md:mt-[4%] p-4 md:relative">
-          <h2 className='text-abbah-black-100 md:text-[40px] text-[25px] text-center font-semibold'>
+          <h2 className='text-abbah-black-100 md:text-[40px] text-[25px] md:text-left text-center font-semibold'>
             Find your way <span className='text-abbah-main-green font-bold'>Home</span> with us
           </h2>
           <p className='md:text-xl text-lg mt-4 text-justify'>
@@ -30,18 +30,18 @@ export default function LoginPage() {
             </button>
           </div>
 
-          <div className="flex md:flex-row flex-col items-center justify-around text-center mt-[30px] text-abbah-main-green md:text-xl text-md font-semibold bg-abbah-main-green/10 backdrop-blur-sm border border-abbah-main-green p-2 rounded-md md:w-[95%] w-full md:mt-[15%]">
+          <div className="flex md:flex-row flex-col items-center justify-around text-center mt-[30px] text-abbah-main-green md:text-xl text-md font-bold bg-abbah-main-green/10 backdrop-blur-sm border border-abbah-main-green p-2 rounded-md md:w-[95%] w-full md:mt-[15%]">
             <div className="flex flex-col mb-2">
               <p>17k+</p>
-              <p>Satisfied Customers</p>
+              <p className="font-normal">Satisfied Customers</p>
             </div>
             <div className="flex flex-col mb-2">
               <p>30+</p>
-              <p>Years of Experience</p>
+              <p className="font-normal">Years of Experience</p>
             </div>
             <div className="flex flex-col">
               <p>50k+</p>
-              <p>Agents</p>
+              <p className="font-normal">Agents</p>
             </div>
           </div>
         </div>
