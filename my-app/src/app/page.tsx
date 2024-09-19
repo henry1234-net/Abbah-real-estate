@@ -1,106 +1,101 @@
-import Image from "next/image";
+import React from 'react';
+import '@/app/globals.css';
+import Navigation from '@/components/navbar';
+import Image from 'next/image';
+import '@/app/scrollbar.css';
 
-export default function Home() {
+export default function LoginPage() {
+  const allImage = ['/HeroImg.png', '/HeroImg.png', '/HeroImg.png', '/HeroImg.png', '/HeroImg.png', '/HeroImg.png'];
+
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <div className='max-w-screen relative'>
+      <div className="fixed top-0 left-0 z-10 w-full flex flex-col items-center justify-center"> 
+        <Navigation /> 
+      </div>
+      <div className='bg-abbah-milk/50 flex md:flex-row flex-col relative rounded-md z-0 pt-16 p-3 w-full h-screen'>
+        <div className="md:w-1/2 h-full md:mt-[4%] p-4 md:relative">
+          <h2 className='text-abbah-black-100 md:text-[40px] text-[25px] md:text-left text-center font-semibold'>
+            Find your way <span className='text-abbah-main-green font-bold'>Home</span> with us
+          </h2>
+          <p className='md:text-xl text-lg mt-4 text-justify'>
+            Your journey to finding the perfect property starts here. Explore our listings to find your dream home or reach out to us for personalized assistance.
+          </p>
+
+          <div className='flex flex-row items-center mt-10 md:text-lg text-base'>
+            <a href="../buy">
+              <button className='bg-none text-abbah-red hover:text-abbah-milk border hover:border-abbah-milk border-abbah-red hover:bg-abbah-red py-3 px-6 rounded-md mr-6 transition-all'>
+              Explore Listings
+              </button>
+            </a>
+            <a href="../sell">
+              <button className='bg-none text-abbah-main-green hover:text-abbah-milk hover:bg-abbah-main-green border hover:border-abbah-milk border-abbah-main-green py-3 px-6 rounded-md ml-6 transition-all'>
+                Contact Us
+              </button>
+            </a>
+          </div>
+
+          <div className="flex md:flex-row flex-col items-center justify-around text-center mt-[30px] text-abbah-main-green md:text-xl text-md font-bold bg-abbah-main-green/10 backdrop-blur-sm border border-abbah-main-green p-2 rounded-md md:w-[95%] w-full md:mt-[15%]">
+            <div className="flex flex-col mb-2">
+              <p>17k+</p>
+              <p className="font-normal">Satisfied Customers</p>
+            </div>
+            <div className="flex flex-col mb-2">
+              <p>30+</p>
+              <p className="font-normal">Years of Experience</p>
+            </div>
+            <div className="flex flex-col">
+              <p>50k+</p>
+              <p className="font-normal">Agents</p>
+            </div>
+          </div>
+        </div>
+
+        <div className="md:w-1/2 h-fit relative order-first md:order-last">
+          <Image
+            src={allImage[0]}
+            alt='Hero Image'
+            layout='responsive'
+            width={700}
+            height={500}
+            objectFit='contain'
+          />
         </div>
       </div>
 
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px] text-3xl">
-        Lets fucking go!!!
+      <div className='w-full h-fit flex flex-col bg-abbah-white mt-4 p-4 rounded-lg overflow-hidden'>
+        <span className='text-[12px] text-abbah-light-green'>Best Choice</span>
+        <span className="text-lg"> Popular Residences </span>
+
+        <div className='flex flex-row overflow-x-scroll scrollbar-thin'>
+          {allImage.map((imageSrc, index) => (
+            <div key={index} className='bg-abbah-milk/20 rounded-md mr-3 relative my-3'>
+              <div className='bg-abbah-milk/50 hover:bg-abbah-milk/70 rounded-md h-[180px] flex-shrink-0 relative'>
+                <Image
+                  src={imageSrc}
+                  alt={`image ${index + 1}`}
+                  layout='fill'
+                  className='rounded-md'
+                  objectFit='contain'
+                />
+              </div>
+              <div className='flex flex-col text-xs p-4'>
+                Abbah Estate, kubwa, Abuja
+                <span className='flex flex-row'><span className='text-abbah-main-green'> ₦1,000,000</span>/year</span>
+                <hr className='my-2'/>
+                <span className='flex flex-row justify-between'>
+                  <span className='mx-1 whitespace-nowrap'>🛏 3 bedrooms</span>
+                  <span className='mx-1 whitespace-nowrap'>🚽 4 bathrooms</span>
+                  <span className='mx-1 whitespace-nowrap'>📐 1,000sqm</span>
+                </span>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
 
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+      <div className='bg-abbah-milk/50 block md:flex-row relative rounded-md z-0 mt-8 p-3 w-full'>
+        {/* Additional content can go here */}
       </div>
-    </main>
+    </div>
   );
 }
