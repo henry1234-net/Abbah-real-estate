@@ -27,7 +27,7 @@ export default function LoginPage() {
               Explore Listings
               </button>
             </a>
-            <a href="../sell">
+            <a href="../contact">
               <button className='bg-none text-abbah-main-green hover:text-abbah-milk hover:bg-abbah-main-green border hover:border-abbah-milk border-abbah-main-green py-3 px-6 rounded-md ml-6 transition-all'>
                 Contact Us
               </button>
