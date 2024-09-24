@@ -12,9 +12,9 @@ export default function LoginPage() {
       <div className="fixed top-0 left-0 z-10 w-full flex flex-col items-center justify-center"> 
         <Navigation /> 
       </div>
-      <div className='bg-abbah-milk/50 flex md:flex-row flex-col relative rounded-md z-0 pt-16 p-3 w-full h-screen'>
+      <div className='bg-abbah-milk/50 flex md:flex-row flex-col relative rounded-md z-0 pt-16 p-3 w-full md:h-screen h-fit'>
         <div className="md:w-1/2 h-full md:mt-[4%] p-4 md:relative">
-          <h2 className='text-abbah-black-100 md:text-[40px] text-[6vw] md:text-left text-center font-semibold'>
+          <h2 className='text-abbah-black-100 md:text-[40px] text-[30px] md:text-left text-center font-semibold'>
             Find your way <span className='text-abbah-main-green font-bold'>Home</span> with us
           </h2>
           <p className='md:text-xl text-lg mt-4 text-justify'>
@@ -83,7 +83,7 @@ export default function LoginPage() {
       
 
       <div className='w-full h-fit flex flex-col bg-abbah-white mt-4 p-4 rounded-lg overflow-hidden'>
-        <span className='text-[1vw] text-abbah-light-green'>Best Choice</span>
+        <span className='text-[13px] text-abbah-light-green'>Best Choice</span>
         <span className="text-lg"> Popular Residences </span>
 
         <div className='flex flex-row overflow-x-scroll scrollbar-thin'>
