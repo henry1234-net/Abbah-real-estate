@@ -111,8 +111,8 @@ export default function LoginPage() {
 
         <div className='flex flex-row overflow-x-scroll scrollbar-thin'>
           {allImage.map((image, index) => (
-            <div key={index} className='bg-bakson-milk/20 rounded-md relative mx-2 my-3 hover:bg-bakson-main-green/30 hoverAnimate'>
-              <div className='bg-bakson-milk/50 rounded-md h-[180px] flex-shrink-0 relative'>
+            <div key={index} className='bg-bakson-milk/20 rounded-md relative mx-2 my-3 hover:bg-bakson-main-green/30 hAnimChild'>
+              <div className='bg-bakson-milk/50 hoverAnimate rounded-md h-[180px] flex-shrink-0 relative'>
                 <Image
                   src={image}
                   alt={`image ${index + 1}`}
@@ -121,7 +121,7 @@ export default function LoginPage() {
                   objectFit='contain'
                 />
               </div>
-              <div className='flex flex-col text-xs p-4  rounded-br-md rounded-bl-md'>
+              <div className='flex flex-col text-xs p-4 rounded-br-md rounded-bl-md'>
                 bakson Estate, kubwa, Abuja
                 <span className='flex flex-row'><span className='text-bakson-main-green'> ₦1,000,000</span>/year</span>
                 <hr className='my-2'/>
