@@ -121,7 +121,7 @@ export default function LoginPage() {
                   objectFit='contain'
                 />
               </div>
-              <div className='flex flex-col text-xs p-4 hAnimChild rounded-br-md rounded-bl-md'>
+              <div className='flex flex-col text-xs p-4  rounded-br-md rounded-bl-md'>
                 bakson Estate, kubwa, Abuja
                 <span className='flex flex-row'><span className='text-bakson-main-green'> ₦1,000,000</span>/year</span>
                 <hr className='my-2'/>
