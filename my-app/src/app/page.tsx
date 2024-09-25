@@ -142,7 +142,7 @@ export default function LoginPage() {
         </h2>
         <div className='flex flex-col md:flex-row items-center justify-around text-center'>
           {whatWeDo.map((texts, index) =>(
-            <Card key={index} className='md:mb-0 mb-4'>
+            <Card key={index} className='md:mb-0 mb-4 border border-bakson-main-green'>
               <div className="block my-4 mx-auto w-fit bg-bakson-milk/50 rounded-full border border-bakson-main-green p-2">
                 <Image 
                 src={texts.icon}
