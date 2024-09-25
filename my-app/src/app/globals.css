@@ -93,7 +93,7 @@ li a:hover, .dropholder a.dropdown:hover::after {
   transition: all 200ms ease-out;
 }
 
-.hoverAnimate:hover, .hAnimChild:hover .hoverAnimate{
+.hoverAnimate:hover{
   background:rgba(34, 139, 34, .2);
   backdrop-filter: blur(4px);
   transform: translateY(-0.5rem);
@@ -101,7 +101,7 @@ li a:hover, .dropholder a.dropdown:hover::after {
   outline: 1px solid #228b22;
 }
 
-.hAnimChild, .hoverAnimate:hover .hAnimChild{
+.hoverAnimate:hover .hAnimChild{
   background: rgb(237, 242, 247);
 }
 
