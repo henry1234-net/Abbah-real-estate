@@ -140,7 +140,7 @@ export default function LoginPage() {
         <h2 className='text-bakson-black-100 md:text-[40px] text-[30px] text-center font-semibold mb-5'>
           What we do
         </h2>
-        <div className='flex flex-col md:flex-row items-center justify-around text-center'>
+        <div className='flex flex-col md:flex-row items-center justify-around text-center md:mb-0 mb-4'>
           {whatWeDo.map((texts, index) =>(
             <Card key={index} className='hoverAnimate'>
               <div className="block my-4 mx-auto w-fit bg-bakson-milk/50 rounded-full p-2">
