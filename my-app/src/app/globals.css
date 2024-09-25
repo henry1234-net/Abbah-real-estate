@@ -88,3 +88,18 @@ li a:hover, .dropholder a.dropdown:hover::after {
     text-wrap: balance;
   }
 }
+
+.hoverAnimate:hover{
+  background:rgba(34, 139, 34, .2);
+  backdrop-filter: blur(4px);
+  transform: translateY(-0.5rem);
+  transition: all 150ms;
+  cursor: pointer;
+  outline: 1px solid #228b22;
+}
+
+.hoverAnimate:hover .hAnimChild{
+  background: rgb(237, 242, 247);
+}
+
+/* ------------------------------------------------------ANIMATIONS--------------------------------------------------------- */

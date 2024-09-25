@@ -9,19 +9,19 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        "abbah-main-green": "#228b22",
-        "abbah-dark-green": "#114411",
-        "abbah-light-green": "#34d334",
-        "abbah-dark-slate": "#101928",
-        "abbah-dark-grey": "#645D5D",
-        "abbah-milk": "#edf2f7",
-        "abbah-red": "#e23939",
-        "abbah-dark-red": "#791e1e",
-        "abbah-black": {
+        "bakson-main-green": "#228b22",
+        "bakson-dark-green": "#114411",
+        "bakson-light-green": "#34d334",
+        "bakson-dark-slate": "#101928",
+        "bakson-dark-grey": "#645D5D",
+        "bakson-milk": "#edf2f7",
+        "bakson-red": "#e23939",
+        "bakson-dark-red": "#791e1e",
+        "bakson-black": {
           100: "#000800",
           200: "#0D0D0D",
         },
-        "abbah-grey": {
+        "bakson-grey": {
           100: "#F0F2F5",
           500: "#667185",
           600: "#475367",
