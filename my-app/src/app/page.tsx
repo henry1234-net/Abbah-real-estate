@@ -111,7 +111,7 @@ export default function LoginPage() {
 
         <div className='flex flex-row overflow-x-scroll scrollbar-thin'>
           {allImage.map((image, index) => (
-            <div key={index} className='bg-bakson-milk/20 rounded-md relative mx-2 my-3 hover:bg-bakson-main-green/30 hoverAnimate'>
+            <div key={index} className='bg-bakson-milk/20 rounded-md relative mx-2 my-3 hoverAnimate'>
               <div className='bg-bakson-milk/50 rounded-md h-[180px] hAnimChild1 flex-shrink-0 relative'>
                 <Image
                   src={image}
