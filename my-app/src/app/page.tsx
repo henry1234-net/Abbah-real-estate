@@ -32,7 +32,7 @@ export default function LoginPage() {
 
   return (
     <div className='max-w-screen relative'>
-      <div className="fixed top-0 left-0 z-10 w-full flex flex-col items-center justify-center"> 
+      <div className="fixed top-0 left-0 z-10 w-full"> 
         <Navigation /> 
       </div>
       <div className='bg-bakson-milk/50 flex md:flex-row flex-col relative rounded-md z-0 pt-16 p-3 w-full md:h-screen h-fit'>
@@ -140,7 +140,7 @@ export default function LoginPage() {
         <h2 className='text-bakson-black-100 md:text-[40px] text-[30px] text-center font-semibold mb-5'>
           What we do
         </h2>
-        <div className='flex flex-row items-center justify-around text-center'>
+        <div className='flex flec-col md:flex-row items-center justify-around text-center'>
           {whatWeDo.map((texts, index) =>(
             <Card key={index} className='hoverAnimate'>
               <div className="block my-4 mx-auto w-fit bg-bakson-milk/50 rounded-full p-2">
