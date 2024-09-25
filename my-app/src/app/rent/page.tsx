@@ -1,7 +1,9 @@
 import React from 'react'
 
-export const Rent = () => {
+const RentPage = () => {
   return (
-    <div>Rent a house</div>
+    <div>Rent a House</div>
   )
 }
+
+export default RentPage
