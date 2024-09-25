@@ -151,7 +151,7 @@ export default function LoginPage() {
                 height={50}
                 />
               </div>
-              <h2 className='text-lg font-semibold my-4'>{texts.Title}</h2>
+              <h2 className='text-xl font-semibold my-4'>{texts.Title}</h2>
               <h3 className='text-sm mb-4'>{texts.Detail}</h3>
             </Card>
           ))}
