@@ -94,14 +94,17 @@ li a:hover, .dropholder a.dropdown:hover::after {
 }
 
 .hoverAnimate:hover{
-  background:rgba(34, 139, 34, .2);
   backdrop-filter: blur(4px);
   transform: translateY(-0.5rem);
   cursor: pointer;
   outline: 1px solid #228b22;
 }
 
-.hoverAnimate:hover .hAnimChild{
+.hoverAnimate:hover .hAnimChild1{
+  background:rgba(34, 139, 34, .2);
+}
+
+.hoverAnimate:hover .hAnimChild2{
   background: rgb(237, 242, 247);
 }
 
