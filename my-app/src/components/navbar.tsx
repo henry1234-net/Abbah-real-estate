@@ -63,35 +63,35 @@ const Navigation = () =>{
         </ul>
         <div>
           <div>
-            <h1 className='text-sm'>Home Page</h1>
+            <h1 className='text-sm'>Home</h1>
             <a className={`p-4 ${bgColor}`} href="../profile" onClick={handleClick}>
               <ProSvg className="my-svg" width="20" height="20" fill={fillColor} />
             </a>
           </div>
           <div>
-          <h1 className='text-sm'>Home Page</h1>
-          <a className={`p-4 ${bgColor}`} href="../profile" onClick={handleClick}>
-            <ProSvg className="my-svg" width="20" height="20" fill={fillColor} />
-          </a>
-        </div>
-        <div>
-          <h1 className='text-sm'>Home Page</h1>
-          <a className={`p-4 ${bgColor}`} href="../profile" onClick={handleClick}>
-            <ProSvg className="my-svg" width="20" height="20" fill={fillColor} />
-          </a>
-        </div>
-        <div>
-          <h1 className='text-sm'>Home Page</h1>
-          <a className={`p-4 ${bgColor}`} href="../profile" onClick={handleClick}>
-            <ProSvg className="my-svg" width="20" height="20" fill={fillColor} />
-          </a>
-        </div>
-        <div>
-          <h1 className='text-sm'>Home Page</h1>
-          <a className={`p-4 ${bgColor}`} href="../profile" onClick={handleClick}>
-            <ProSvg className="my-svg" width="20" height="20" fill={fillColor} />
-          </a>
-        </div>
+            <h1 className='text-sm'>Home</h1>
+            <a className={`p-4 ${bgColor}`} href="../profile" onClick={handleClick}>
+              <ProSvg className="my-svg" width="20" height="20" fill={fillColor} />
+            </a>
+          </div>
+          <div>
+            <h1 className='text-sm'>Home</h1>
+            <a className={`p-4 ${bgColor}`} href="../profile" onClick={handleClick}>
+              <ProSvg className="my-svg" width="20" height="20" fill={fillColor} />
+            </a>
+          </div>
+          <div>
+            <h1 className='text-sm'>Home</h1>
+            <a className={`p-4 ${bgColor}`} href="../profile" onClick={handleClick}>
+              <ProSvg className="my-svg" width="20" height="20" fill={fillColor} />
+            </a>
+          </div>
+          <div>
+            <h1 className='text-sm'>Home</h1>
+            <a className={`p-4 ${bgColor}`} href="../profile" onClick={handleClick}>
+              <ProSvg className="my-svg" width="20" height="20" fill={fillColor} />
+            </a>
+          </div>
         </div>
         
         
