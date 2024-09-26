@@ -1,16 +1,48 @@
-import React from 'react'
+"use client"
+import React,{useState, useEffect} from 'react'
+import ProSvg from '@/components/svg/profile'
 
-export default function Navigation(){
+const Navigation = () =>{
+  const [fillColor, setFillColor] = useState(() => {
+    return typeof window !== 'undefined' ? localStorage.getItem('fillColor') || '#228b22' : '#228b22';
+  });
+  
+  const [bgColor, setBgColor] = useState(() => {
+    return typeof window !== 'undefined' ? localStorage.getItem('bgColor') || '' : '';
+  });
+
+  const handleClick = () => {
+    const newColor = fillColor === '#228b22' ? 'white' : '#228b22';
+    setFillColor(newColor);
+    
+    const newBgColor = bgColor ? '' : 'bg-[#34d334]/30 rounded-full p-2'; // Change as per your CSS
+    setBgColor(newBgColor);
+    
+    // Save to localStorage
+    if (typeof window !== 'undefined') {
+      localStorage.setItem('fillColor', newColor);
+      localStorage.setItem('bgColor', newBgColor);
+    }
+  };
+
+  useEffect(() => {
+    // Ensure colors are set from localStorage when the component mounts
+    if (typeof window !== 'undefined') {
+      setFillColor(localStorage.getItem('fillColor') || '#228b22');
+      setBgColor(localStorage.getItem('bgColor') || '');
+    }
+  }, []);
+
   return (
     <div>
-      <nav className='flex flex-row justify-around items-center w-screen h-14 bg-white shadow-md text-lg text-bakson-main-green font-medium rounded-lg'>
-        <div className='mr-10 hover:cursor-pointer'>Bokta Homes</div>
+      <nav className='flex flex-row justify-around items-center w-screen h-14 bg-bakson-milk md:bg-white shadow-md text-lg md:text-bakson-grey-500 font-medium md:rounded-lg border border-t-bakson-main-green rounded-t-lg'>
+        <div className='mr-10 hover:cursor-pointer hidden md:block'>Bokta Homes</div>
         <ul className='md:flex flex-row justify-around w-[40%] hidden'>
           <li className='group'><a href="#" className=''>Home</a></li>
         <div className='relative'>
             <li className='dropholder'>
                 <a href="#" className='dropdown'>Properties</a>
-                <div className='absolute w-full p-1 bg-bakson-milk text-bakson-main-green rounded-sm mt-1 drop'>
+                <div className='absolute w-full p-1 bg-bakson-milk text-bakson-grey-500 rounded-sm mt-1 drop'>
                     <ul className='list-none p-0 m-0'>
                         <li className='w-full'>
                             <a href="../buy" className='block w-full text-center p-1'>Buy</a>
@@ -29,8 +61,16 @@ export default function Navigation(){
           <li><a href="#">Services</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
-        <div className='ml-10'>user profile</div>
+        <div>
+          <h1>Home Page</h1>
+          <a className={`p-4 ${bgColor}`} href="../profile" onClick={handleClick}>
+            <ProSvg className="my-svg" width="50" height="50" fill={fillColor} />
+          </a>
+        </div>
+        
       </nav>       
     </div>
   )
 }
+
+export default Navigation;

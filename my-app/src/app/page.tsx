@@ -32,33 +32,33 @@ export default function LoginPage() {
 
   return (
     <div className='max-w-screen relative'>
-      <div className="fixed top-0 left-0 z-10 w-full"> 
+      <div className="fixed md:top-0 bottom-0 left-0 z-10 w-full"> 
         <Navigation /> 
       </div>
-      <div className='bg-bakson-milk/50 flex md:flex-row flex-col relative rounded-md z-0 pt-16 p-3 w-full md:h-screen h-fit'>
+      <div className='bg-bakson-main-green flex md:flex-row flex-col relative rounded-md z-0 pt-16 p-3 w-full md:h-screen h-fit'>
         <div className="md:w-1/2 h-full md:mt-[4%] p-4 md:relative">
-          <h2 className='text-bakson-black-100 md:text-[40px] text-[30px] md:text-left text-center font-semibold'>
-            Find your way <span className='text-bakson-main-green font-bold'>Home</span> with us
+          <h2 className='text-bakson-milk md:text-[40px] text-[30px] md:text-left text-center font-normal'>
+            Find your way <span className='text-bakson-milk font-bold'>Home</span> with us
           </h2>
-          <p className='md:text-xl text-lg mt-4 text-justify'>
+          <p className='md:text-xl text-lg mt-4 text-justify text-bakson-milk'>
             Your journey to finding the perfect property starts here. Explore our listings to find your dream home or reach out to us for personalized assistance.
           </p>
 
           <div className='flex flex-row items-center mt-6 md:mt-10 md:text-lg text-base pb-2'>
             <a href="../buy">
-              <button className='bg-bakson-red/10 backdrop-blur-sm text-bakson-red hover:text-bakson-milk border hover:border-bakson-milk border-bakson-red hover:bg-bakson-red py-3 px-6 rounded-md mr-6 transition-all'>
+              <button className='bg-bakson-milk/10 backdrop-blur-sm text-bakson-milk hover:text-bakson-milk border hover:border-bakson-milk border-bakson-milk hover:bg-bakson-milk py-3 px-6 rounded-md mr-6 transition-all'>
               Explore Listings
               </button>
             </a>
             <a href="../contact">
-              <button className='bg-bakson-main-green/10 backdrop-blur-sm text-bakson-main-green hover:text-bakson-milk hover:bg-bakson-main-green border hover:border-bakson-milk border-bakson-main-green py-3 px-6 rounded-md ml-6 transition-all'>
+              <button className='bg-bakson-milk/10 backdrop-blur-sm text-bakson-milk hover:text-bakson-milk hover:bg-bakson-milk border hover:border-bakson-milk border-bakson-milk py-3 px-6 rounded-md ml-6 transition-all'>
                 Contact Us
               </button>
             </a>
           </div>
 
           <div className="w-full md:flex flex-row items-center justify-center hidden">
-        <div className="flex md:flex-row flex-col items-center justify-around text-center mt-[30px] text-bakson-main-green md:text-xl text-md font-bold bg-bakson-main-green/10 backdrop-blur-sm border border-bakson-main-green p-2 rounded-md w-full md:mt-[13%]">
+        <div className="flex md:flex-row flex-col items-center justify-around text-center mt-[30px] text-bakson-milk md:text-xl text-md font-bold border border-bakson-milk p-2 rounded-md w-full md:mt-[13%]">
           <div className="flex flex-col mb-2">
             <p>17k+</p>
             <p className="font-normal">Satisfied Customers</p>
