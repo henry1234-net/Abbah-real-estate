@@ -61,33 +61,28 @@ const Navigation = () =>{
           <li><a href="#">Services</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
-        <div className="flex flex-row md:hidden">
+        <div className="flex flex-row items-center justify-around md:hidden">
           <div>
-            <h1 className='text-sm'>Home</h1>
             <a className={`p-4 ${bgColor}`} href="../profile" onClick={handleClick}>
               <ProSvg className="my-svg" width="20" height="20" fill={fillColor} />
             </a>
           </div>
           <div>
-            <h1 className='text-sm'>Home</h1>
             <a className={`p-4 ${bgColor}`} href="../profile" onClick={handleClick}>
               <ProSvg className="my-svg" width="20" height="20" fill={fillColor} />
             </a>
           </div>
           <div>
-            <h1 className='text-sm'>Home</h1>
             <a className={`p-4 ${bgColor}`} href="../profile" onClick={handleClick}>
               <ProSvg className="my-svg" width="20" height="20" fill={fillColor} />
             </a>
           </div>
           <div>
-            <h1 className='text-sm'>Home</h1>
             <a className={`p-4 ${bgColor}`} href="../profile" onClick={handleClick}>
               <ProSvg className="my-svg" width="20" height="20" fill={fillColor} />
             </a>
           </div>
           <div>
-            <h1 className='text-sm'>Home</h1>
             <a className={`p-4 ${bgColor}`} href="../profile" onClick={handleClick}>
               <ProSvg className="my-svg" width="20" height="20" fill={fillColor} />
             </a>
