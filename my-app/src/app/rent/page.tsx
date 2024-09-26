@@ -6,4 +6,4 @@ const RentPage = () => {
   )
 }
 
-export default RentPage
+export default RentPage;
