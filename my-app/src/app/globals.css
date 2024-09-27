@@ -108,9 +108,17 @@ li a:hover, .dropholder a.dropdown:hover::after {
   background: rgb(237, 242, 247);
 }
 
-.svgContainer:hover .svg{
-   fill: #228b22;
-   cursor: pointer;
+.svg-path{
+  fill: #667185;
+}
+
+.svg-container:hover .svg-path{
+  fill: #228b22;
+  cursor: pointer;
+}
+
+.svg-hold .svg-path{
+  fill: #228b22;
 }
 
 /* ------------------------------------------------------ANIMATIONS--------------------------------------------------------- */

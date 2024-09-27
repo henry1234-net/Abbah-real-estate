@@ -1,6 +1,5 @@
 import React from 'react';
 import '@/app/globals.css';
-import Navigation from '@/components/navbar';
 import Image from 'next/image';
 import '@/app/scrollbar.css';
 import Card from '@/components/card/card'

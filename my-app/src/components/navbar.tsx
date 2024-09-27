@@ -1,87 +1,70 @@
-"use client"
-import React,{useState, useEffect} from 'react'
-import ProSvg from '@/components/svg/profile'
+"use client";
+import React from 'react';
+import ProSvg from '@/components/svg/profile';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+import clsx from 'clsx';
 
-const Navigation = () =>{
-  const [fillColor, setFillColor] = useState(() => {
-    return typeof window !== 'undefined' ? localStorage.getItem('fillColor') || '#228b22' : '#228b22';
-  });
-  
-  const [bgColor, setBgColor] = useState(() => {
-    return typeof window !== 'undefined' ? localStorage.getItem('bgColor') || '' : '';
-  });
-
-  const handleClick = () => {
-    const newColor = fillColor === '#228b22' ? 'white' : '#228b22';
-    setFillColor(newColor);
-    
-    const newBgColor = bgColor ? '' : 'bg-[#34d334] rounded-full p-2';
-    setBgColor(newBgColor);
-    
-    if (typeof window !== 'undefined') {
-      localStorage.setItem('fillColor', newColor);
-      localStorage.setItem('bgColor', newBgColor);
-    }
-  };
-
-  useEffect(() => {
-    if (typeof window !== 'undefined') {
-      setFillColor(localStorage.getItem('fillColor') || '#228b22');
-      setBgColor(localStorage.getItem('bgColor') || '');
-    }
-  }, []);
+const Navigation = () => {
+  const pathname = usePathname();
 
   return (
     <div className="fixed md:top-0 bottom-0 left-0 z-10 w-full h-fit">
       <nav className='flex flex-row justify-around items-center w-full h-14 bg-bakson-milk md:bg-white shadow-md text-lg md:text-bakson-grey-500 font-medium md:rounded-b-lg md:rounded-t-none border border-t-bakson-main-green md:border-none rounded-t-lg'>
         <div className='mr-10 hover:cursor-pointer hidden md:block'>Bokta Homes</div>
         <ul className='md:flex flex-row justify-around w-[40%] hidden'>
-          <li className='group'><a href="/" className=''>Home</a></li>
-        <div className='relative'>
+          <li className='group'><Link href="/" className=''>Home</Link></li>
+          <div className='relative'>
             <li className='dropholder'>
-                <a href="#" className='dropdown'>Properties</a>
-                <div className='absolute w-full p-1 bg-bakson-milk text-bakson-grey-500 rounded-sm mt-1 drop'>
-                    <ul className='list-none p-0 m-0'>
-                        <li className='w-full'>
-                            <a href="../buy" className='block w-full text-center p-1'>Buy</a>
-                        </li>
-                        <li className='w-full'>
-                            <a href="../sell" className='block w-full text-center p-1'>Sell</a>
-                        </li>
-                        <li className='w-full'>
-                            <a href="../rent" className='block w-full text-center p-1'>Rent</a>
-                        </li>
-                    </ul>
-                </div>
+              <a href="#" className='dropdown'>Properties</a>
+              <div className='absolute w-full p-1 bg-bakson-milk text-bakson-grey-500 rounded-sm mt-1 drop'>
+                <ul className='list-none p-0 m-0'>
+                  <li className='w-full'><Link href="../buy" className='block w-full text-center p-1'>Buy</Link></li>
+                  <li className='w-full'><Link href="../sell" className='block w-full text-center p-1'>Sell</Link></li>
+                  <li className='w-full'><Link href="../rent" className='block w-full text-center p-1'>Rent</Link></li>
+                </ul>
+              </div>
             </li>
-        </div>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Contact</a></li>
+          </div>
+          <li><Link href="#">About Us</Link></li>
+          <li><Link href="#">Services</Link></li>
+          <li><Link href="#">Contact</Link></li>
         </ul>
         <div className="flex flex-row items-center justify-around">
-          <a className={`p-4 md:hidden flex ${bgColor}`} href="../profile" onClick={handleClick}>
-            <ProSvg className="my-svg" width="20" height="20" fill={fillColor} />
-          </a>
-          <a className={`p-4 md:hidden flex ${bgColor}`} href="../profile" onClick={handleClick}>
-            <ProSvg className="my-svg" width="20" height="20" fill={fillColor} />
-          </a>
-          <a className={`p-4 md:hidden flex ${bgColor}`} href="../profile" onClick={handleClick}>
-            <ProSvg className="my-svg" width="20" height="20" fill={fillColor} />
-          </a>
-          <a className={`p-4 md:hidden flex ${bgColor}`} href="../noprofile" onClick={handleClick}>
-            <ProSvg className="my-svg" width="20" height="20" fill={fillColor} />
-          </a>
-          <a className={`p-4 ${bgColor}`} href="../profile" onClick={handleClick}>
-            <ProSvg className="my-svg" width="20" height="20" fill={fillColor} />
-          </a>
+          <Link className={clsx('p-3 md:hidden flex svg-container hover:bg-bakson-milk rounded-full', {
+            'bg-bakson-milk svg-hold': pathname === "/profile"
+          })} 
+          href="../profile">
+            <ProSvg className="fill-blue" width="20" height="20" />
+          </Link>
+          <Link className={clsx('p-3 md:hidden flex svg-container hover:bg-bakson-milk rounded-full', {
+            'bg-bakson-milk svg-hold': pathname === "/profile"
+          })} 
+          href="../profile">
+            <ProSvg className="fill-blue" width="20" height="20" />
+          </Link>
+          <Link className={clsx('p-3 md:hidden flex svg-container hover:bg-bakson-milk rounded-full', {
+            'bg-bakson-milk svg-hold': pathname === "/profile"
+          })} 
+          href="../profile">
+            <ProSvg className="fill-blue" width="20" height="20" />
+          </Link>
+          <Link className={clsx('p-3 md:hidden flex svg-container hover:bg-bakson-milk rounded-full', {
+            'bg-bakson-milk svg-hold': pathname === "/profile"
+          })} 
+          href="../profile">
+            <ProSvg className="fill-blue" width="20" height="20" />
+          </Link>
+          <Link className={clsx('p-3 svg-container hover:bg-bakson-milk rounded-full', {
+            'bg-bakson-milk svg-hold': pathname === "/profile"
+          })} 
+          href="../profile">
+            <ProSvg className="fill-blue" width="20" height="20" />
+          </Link>
         </div>
-        
-        
-        
       </nav>       
     </div>
-  )
+  );
 }
 
 export default Navigation;
