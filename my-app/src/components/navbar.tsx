@@ -15,10 +15,9 @@ const Navigation = () =>{
     const newColor = fillColor === '#228b22' ? 'white' : '#228b22';
     setFillColor(newColor);
     
-    const newBgColor = bgColor ? '' : 'bg-[#34d334]/30 rounded-full p-2'; // Change as per your CSS
+    const newBgColor = bgColor ? '' : 'bg-[#34d334] rounded-full p-2';
     setBgColor(newBgColor);
     
-    // Save to localStorage
     if (typeof window !== 'undefined') {
       localStorage.setItem('fillColor', newColor);
       localStorage.setItem('bgColor', newBgColor);
@@ -26,7 +25,6 @@ const Navigation = () =>{
   };
 
   useEffect(() => {
-    // Ensure colors are set from localStorage when the component mounts
     if (typeof window !== 'undefined') {
       setFillColor(localStorage.getItem('fillColor') || '#228b22');
       setBgColor(localStorage.getItem('bgColor') || '');
@@ -34,11 +32,11 @@ const Navigation = () =>{
   }, []);
 
   return (
-    <div>
-      <nav className='flex flex-row justify-around items-center w-screen h-14 bg-bakson-milk md:bg-white shadow-md text-lg md:text-bakson-grey-500 font-medium md:rounded-lg border border-t-bakson-main-green rounded-t-lg'>
+    <div className="fixed md:top-0 bottom-0 left-0 z-10 w-full h-fit">
+      <nav className='flex flex-row justify-around items-center w-full h-14 bg-bakson-milk md:bg-white shadow-md text-lg md:text-bakson-grey-500 font-medium md:rounded-b-lg md:rounded-t-none border border-t-bakson-main-green md:border-none rounded-t-lg'>
         <div className='mr-10 hover:cursor-pointer hidden md:block'>Bokta Homes</div>
         <ul className='md:flex flex-row justify-around w-[40%] hidden'>
-          <li className='group'><a href="#" className=''>Home</a></li>
+          <li className='group'><a href="/" className=''>Home</a></li>
         <div className='relative'>
             <li className='dropholder'>
                 <a href="#" className='dropdown'>Properties</a>
@@ -61,33 +59,24 @@ const Navigation = () =>{
           <li><a href="#">Services</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
-        <div className="flex flex-row items-center justify-around md:hidden">
-          <div>
-            <a className={`p-4 ${bgColor}`} href="../profile" onClick={handleClick}>
-              <ProSvg className="my-svg" width="20" height="20" fill={fillColor} />
-            </a>
-          </div>
-          <div>
-            <a className={`p-4 ${bgColor}`} href="../profile" onClick={handleClick}>
-              <ProSvg className="my-svg" width="20" height="20" fill={fillColor} />
-            </a>
-          </div>
-          <div>
-            <a className={`p-4 ${bgColor}`} href="../profile" onClick={handleClick}>
-              <ProSvg className="my-svg" width="20" height="20" fill={fillColor} />
-            </a>
-          </div>
-          <div>
-            <a className={`p-4 ${bgColor}`} href="../profile" onClick={handleClick}>
-              <ProSvg className="my-svg" width="20" height="20" fill={fillColor} />
-            </a>
-          </div>
-          <div>
-            <a className={`p-4 ${bgColor}`} href="../profile" onClick={handleClick}>
-              <ProSvg className="my-svg" width="20" height="20" fill={fillColor} />
-            </a>
-          </div>
+        <div className="flex flex-row items-center justify-around">
+          <a className={`p-4 md:hidden flex ${bgColor}`} href="../profile" onClick={handleClick}>
+            <ProSvg className="my-svg" width="20" height="20" fill={fillColor} />
+          </a>
+          <a className={`p-4 md:hidden flex ${bgColor}`} href="../profile" onClick={handleClick}>
+            <ProSvg className="my-svg" width="20" height="20" fill={fillColor} />
+          </a>
+          <a className={`p-4 md:hidden flex ${bgColor}`} href="../profile" onClick={handleClick}>
+            <ProSvg className="my-svg" width="20" height="20" fill={fillColor} />
+          </a>
+          <a className={`p-4 md:hidden flex ${bgColor}`} href="../noprofile" onClick={handleClick}>
+            <ProSvg className="my-svg" width="20" height="20" fill={fillColor} />
+          </a>
+          <a className={`p-4 ${bgColor}`} href="../profile" onClick={handleClick}>
+            <ProSvg className="my-svg" width="20" height="20" fill={fillColor} />
+          </a>
         </div>
+        
         
         
       </nav>       

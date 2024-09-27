@@ -32,9 +32,6 @@ export default function LoginPage() {
 
   return (
     <div className='max-w-screen relative'>
-      <div className="fixed md:top-0 bottom-0 left-0 z-10 w-full"> 
-        <Navigation /> 
-      </div>
       <div className='bg-bakson-main-green flex md:flex-row flex-col relative rounded-md z-0 pt-16 p-3 w-full md:h-screen h-fit'>
         <div className="md:w-1/2 h-full md:mt-[4%] p-4 md:relative">
           <h2 className='text-bakson-milk md:text-[40px] text-[30px] md:text-left text-center font-normal'>
@@ -46,12 +43,12 @@ export default function LoginPage() {
 
           <div className='flex flex-row items-center mt-6 md:mt-10 md:text-lg text-base pb-2'>
             <a href="../buy">
-              <button className='bg-bakson-milk/10 backdrop-blur-sm text-bakson-milk hover:text-bakson-milk border hover:border-bakson-milk border-bakson-milk hover:bg-bakson-milk py-3 px-6 rounded-md mr-6 transition-all'>
+              <button className='bg-bakson-milk/10 backdrop-blur-sm text-bakson-milk border hover:text-bakson-main-green hover:bg-bakson-milk/90 hover:border-bakson-main-green py-3 px-6 rounded-md mr-6 transition-all'>
               Explore Listings
               </button>
             </a>
             <a href="../contact">
-              <button className='bg-bakson-milk/10 backdrop-blur-sm text-bakson-milk hover:text-bakson-milk hover:bg-bakson-milk border hover:border-bakson-milk border-bakson-milk py-3 px-6 rounded-md ml-6 transition-all'>
+              <button className='bg-bakson-milk/10 backdrop-blur-sm hover:backdrop-blur-lg text-bakson-milk hover:text-bakson-main-green hover:bg-bakson-milk/90 border hover:border-bakson-main-green border-bakson-milk py-3 px-6 rounded-md ml-6 transition-all'>
                 Contact Us
               </button>
             </a>
