@@ -50,12 +50,15 @@ const Navigation = () => {
           href="../profile">
             <ProSvg className="fill-blue" width="20" height="20" />
           </Link>
-          <div className={clsx('p-3 mx-2 svg-container hover:bg-bakson-milk w-fit rounded-full', {
-              'bg-bakson-milk svg-hold': pathname === "/noprofile"
-            })} >
-            <Link href="../noprofile">
-              <Search className="fill-blue" width="20" height="20" />
-            </Link>
+
+          <div className='hidden md:flex flex-row items-center justify-center'><input type="search" name="searchFor" id="SearchId" className='focus:border-none border border-bakson-main-green' placeholder='4 bedroom duplex for sale in jabi'/>
+            <div className={clsx('p-3 mx-2 svg-container hover:bg-bakson-milk w-fit rounded-full', {
+                'bg-bakson-milk svg-hold': pathname === "/noprofile"
+              })} >
+              <Link href="../noprofile">
+                <Search className="fill-blue" width="20" height="20" />
+              </Link>
+            </div>
           </div>
           
           <Link className={clsx('p-3 mx-2 svg-container w-fit hover:bg-bakson-milk rounded-full', {
