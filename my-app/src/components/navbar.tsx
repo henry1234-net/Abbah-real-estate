@@ -50,13 +50,15 @@ const Navigation = () => {
           href="../profile">
             <ProSvg className="fill-blue" width="20" height="20" />
           </Link>
-          <Link className={clsx('p-3 mx-2 svg-container hover:bg-bakson-milk rounded-full', {
-            'bg-bakson-milk svg-hold': pathname === "/noprofile"
-          })} 
-          href="../noprofile">
-            <Search className="fill-blue" width="20" height="20" />
-          </Link>
-          <Link className={clsx('p-3 mx-2 svg-container hover:bg-bakson-milk rounded-full', {
+          <div className={clsx('p-3 mx-2 svg-container hover:bg-bakson-milk w-fit rounded-full', {
+              'bg-bakson-milk svg-hold': pathname === "/noprofile"
+            })} >
+            <Link href="../noprofile">
+              <Search className="fill-blue" width="20" height="20" />
+            </Link>
+          </div>
+          
+          <Link className={clsx('p-3 mx-2 svg-container w-fit hover:bg-bakson-milk rounded-full', {
             'bg-bakson-milk svg-hold': pathname === "/profile"
           })} 
           href="../profile">
