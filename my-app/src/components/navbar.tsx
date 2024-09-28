@@ -1,6 +1,7 @@
 "use client";
 import React from 'react';
 import ProSvg from '@/components/svg/profile';
+import Search from '@/components/svg/search';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import clsx from 'clsx';
@@ -31,31 +32,31 @@ const Navigation = () => {
           <li><Link href="#">Contact</Link></li>
         </ul>
         <div className="flex flex-row items-center justify-around">
-          <Link className={clsx('p-3 md:hidden flex svg-container hover:bg-bakson-milk rounded-full', {
+          <Link className={clsx('p-3 mx-2 md:hidden flex svg-container hover:bg-bakson-milk rounded-full', {
             'bg-bakson-milk svg-hold': pathname === "/profile"
           })} 
           href="../profile">
             <ProSvg className="fill-blue" width="20" height="20" />
           </Link>
-          <Link className={clsx('p-3 md:hidden flex svg-container hover:bg-bakson-milk rounded-full', {
+          <Link className={clsx('p-3 mx-2 md:hidden flex svg-container hover:bg-bakson-milk rounded-full', {
             'bg-bakson-milk svg-hold': pathname === "/profile"
           })} 
           href="../profile">
             <ProSvg className="fill-blue" width="20" height="20" />
           </Link>
-          <Link className={clsx('p-3 md:hidden flex svg-container hover:bg-bakson-milk rounded-full', {
+          <Link className={clsx('p-3 mx-2 md:hidden flex svg-container hover:bg-bakson-milk rounded-full', {
             'bg-bakson-milk svg-hold': pathname === "/profile"
           })} 
           href="../profile">
             <ProSvg className="fill-blue" width="20" height="20" />
           </Link>
-          <Link className={clsx('p-3 md:hidden flex svg-container hover:bg-bakson-milk rounded-full', {
-            'bg-bakson-milk svg-hold': pathname === "/profile"
+          <Link className={clsx('p-3 mx-2 svg-container hover:bg-bakson-milk rounded-full', {
+            'bg-bakson-milk svg-hold': pathname === "/noprofile"
           })} 
-          href="../profile">
-            <ProSvg className="fill-blue" width="20" height="20" />
+          href="../noprofile">
+            <Search className="fill-blue" width="20" height="20" />
           </Link>
-          <Link className={clsx('p-3 svg-container hover:bg-bakson-milk rounded-full', {
+          <Link className={clsx('p-3 mx-2 svg-container hover:bg-bakson-milk rounded-full', {
             'bg-bakson-milk svg-hold': pathname === "/profile"
           })} 
           href="../profile">
