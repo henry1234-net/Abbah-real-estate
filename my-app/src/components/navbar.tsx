@@ -2,6 +2,9 @@
 import React from 'react';
 import ProSvg from '@/components/svg/profile';
 import Search from '@/components/svg/search';
+import HomeIcon from './svg/home';
+import MessageIcon from './svg/message';
+import AddIcon from './svg/add';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import clsx from 'clsx';
@@ -36,19 +39,19 @@ const Navigation = () => {
             'bg-bakson-milk svg-hold': pathname === "/profile"
           })} 
           href="../profile">
-            <ProSvg className="fill-blue" width="20" height="20" />
+            <HomeIcon className="fill-blue" width="20" height="20" />
           </Link>
           <Link className={clsx('p-3 mx-2 md:hidden flex svg-container hover:bg-bakson-milk rounded-full', {
             'bg-bakson-milk svg-hold': pathname === "/profile"
           })} 
           href="../profile">
-            <ProSvg className="fill-blue" width="20" height="20" />
+            <MessageIcon className="fill-blue" width="20" height="20" />
           </Link>
           <Link className={clsx('p-3 mx-2 md:hidden flex svg-container hover:bg-bakson-milk rounded-full', {
             'bg-bakson-milk svg-hold': pathname === "/profile"
           })} 
           href="../profile">
-            <ProSvg className="fill-blue" width="20" height="20" />
+            <AddIcon className="fill-blue" width="20" height="20" />
           </Link>
 
           <div className='flex flex-row items-center justify-center'><input type="search" name="searchFor" id="SearchId" className='focus:border-none border border-bakson-main-green hidden md:flex' placeholder='4 bedroom duplex for sale in jabi'/>
