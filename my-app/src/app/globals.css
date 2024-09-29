@@ -108,7 +108,8 @@ li a:hover, .dropholder a.dropdown:hover::after {
   background: rgb(237, 242, 247);
 }
 
-.svg-path, 
+.svg-path,
+.svg-path3,
 .svg-path4,
 .svg-path5
 {
@@ -123,19 +124,29 @@ li a:hover, .dropholder a.dropdown:hover::after {
   fill: #228b22;
 }
 
-.svg-hold .svg-path,   
+.svg-hold .svg-path,
+.svg-hold .svg-path3,  
 .svg-hold .svg-path4, 
 .svg-hold .svg-path5{
   fill: #228b22;
 }
 
-.svg-path2,
-.svg-path3{
-  stroke: #667185;
+.svg-path, .svg-path4{
+  stroke:#667185;
+  stroke-width: 0.5px;
 }
-.svg-hold .svg-path2,
-.svg-hold .svg-path3{
+.svg-hold .svg-path, .svg-hold .svg-path4{
   stroke: #228b22;
+  stroke-width: 0.5px;
+}
+
+.svg-path2{
+  stroke: #667185;
+  stroke-width: 2px;
+}
+.svg-hold .svg-path2{
+  stroke: #228b22;
+  stroke-width: 2px;
 }
 
 input[type="search"] {

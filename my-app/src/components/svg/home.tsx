@@ -1,15 +1,19 @@
 // Icon.tsx
 import React from 'react';
 
-const HomeIcon: React.FC<React.SVGProps<SVGSVGElement>> = (props) => {
-  return (
+interface HomeSvgProps {
+  className?: string;
+  width: string;
+  height: string;
+}
+
+const HomeIcon: React.FC<HomeSvgProps> = ({ className, width, height }) => (
     <svg
-      width="800px"
-      height="800px"
+      width={width}
+      height={height}
       viewBox="0 0 24 24"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      {...props} // Allows passing additional props
     >
       <path
         fillRule="evenodd"
@@ -20,6 +24,5 @@ const HomeIcon: React.FC<React.SVGProps<SVGSVGElement>> = (props) => {
       />
     </svg>
   );
-};
 
 export default HomeIcon;

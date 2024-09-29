@@ -1,25 +1,22 @@
-// Icon.tsx
 import React from 'react';
 
-const AddIcon: React.FC<React.SVGProps<SVGSVGElement>> = (props) => {
-  return (
+interface AddSvgProps {
+  className?: string;
+  width: string;
+  height: string;
+}
+
+  const AddIcon: React.FC<AddSvgProps> = ({ className, width, height }) => (
     <svg
-      width="800px"
-      height="800px"
-      viewBox="0 0 24 24"
-      fill="none"
+      width={width}
+      height={height}
       xmlns="http://www.w3.org/2000/svg"
-      {...props}
+      viewBox="0 0 122.88 122.88"
     >
-      <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22ZM12.75 9C12.75 8.58579 12.4142 8.25 12 8.25C11.5858 8.25 11.25 8.58579 11.25 9L11.25 11.25H9C8.58579 11.25 8.25 11.5858 8.25 12C8.25 12.4142 8.58579 12.75 9 12.75H11.25V15C11.25 15.4142 11.5858 15.75 12 15.75C12.4142 15.75 12.75 15.4142 12.75 15L12.75 12.75H15C15.4142 12.75 15.75 12.4142 15.75 12C15.75 11.5858 15.4142 11.25 15 11.25H12.75V9Z"
-        id="Sell"
-        className="svg-path3"
-      />
+      <path d="M61.44,0A61.46,61.46,0,1,1,18,18,61.25,61.25,0,0,1,61.44,0ZM88.6,56.82v9.24a4,4,0,0,1-4,4H70V84.62a4,4,0,0,1-4,4H56.82a4,4,0,0,1-4-4V70H38.26a4,4,0,0,1-4-4V56.82a4,4,0,0,1,4-4H52.84V38.26a4,4,0,0,1,4-4h9.24a4,4,0,0,1,4,4V52.84H84.62a4,4,0,0,1,4,4Zm8.83-31.37a50.92,50.92,0,1,0,14.9,36,50.78,50.78,0,0,0-14.9-36Z"
+      id="sell"
+      className='svg-path3'/>
     </svg>
   );
-};
 
 export default AddIcon;
