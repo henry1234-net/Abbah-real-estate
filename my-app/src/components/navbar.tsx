@@ -34,24 +34,24 @@ const Navigation = () => {
           <li><Link href="#">Services</Link></li>
           <li><Link href="#">Contact</Link></li>
         </ul>
-        <div className="flex flex-row items-center justify-around">
+        <div className="flex flex-row items-center justify-between">
           <Link className={clsx('p-3 mx-2 md:hidden flex svg-container hover:bg-bakson-milk rounded-full', {
             'bg-bakson-milk svg-hold': pathname === "/"
           })} 
           href="../">
-            <HomeIcon className="fill-blue" width="20" height="20" />
+            <HomeIcon className="fill-blue" width="25" height="25" />
           </Link>
           <Link className={clsx('p-3 mx-2 md:hidden flex svg-container hover:bg-bakson-milk rounded-full', {
             'bg-bakson-milk svg-hold': pathname === "/message"
           })} 
           href="../message">
-            <MessageIcon className="fill-blue" width="20" height="20" />
+            <MessageIcon className="fill-blue" width="25" height="25" />
           </Link>
           <Link className={clsx('p-3 mx-2 md:hidden flex svg-container hover:bg-bakson-milk rounded-full', {
             'bg-bakson-milk svg-hold': pathname === "/sell"
           })} 
           href="../sell">
-            <AddIcon className="fill-blue" width="30" height="30" />
+            <AddIcon className="fill-blue" width="35" height="35" />
           </Link>
 
           <div className='flex flex-row items-center justify-center'><input type="search" name="searchFor" id="SearchId" className='focus:border-none border border-bakson-main-green hidden md:flex' placeholder='4 bedroom duplex for sale in jabi'/>
@@ -59,7 +59,7 @@ const Navigation = () => {
                 'bg-bakson-milk svg-hold': pathname === "/search"
               })} >
               <Link href="../search">
-                <Search className="fill-blue" width="20" height="20" />
+                <Search className="fill-blue" width="25" height="25" />
               </Link>
             </div>
           </div>
@@ -68,7 +68,7 @@ const Navigation = () => {
             'bg-bakson-milk svg-hold': pathname === "/profile"
           })} 
           href="../profile">
-            <ProSvg className="fill-blue" width="18" height="18" />
+            <ProSvg className="fill-blue" width="23" height="23" />
           </Link>
         </div>
       </nav>       
