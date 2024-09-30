@@ -41,7 +41,7 @@ const Navigation = () => {
           <li><Link href="#">Services</Link></li>
           <li><Link href="#">Contact</Link></li>
         </ul>
-        <div className="flex flex-row items-center justify-between">
+        <div className="flex flex-row items-center justify-around w-full">
           <Link className={clsx('p-3 mx-2 md:hidden flex svg-container hover:bg-bakson-main-green/10 rounded-full', {
             'svg-hold bg-bakson-main-green/10': activePath === "/"
           })} 
