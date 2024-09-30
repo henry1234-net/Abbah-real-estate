@@ -74,9 +74,9 @@ const Navigation = () => {
             src="/sunJinWoo.png"
             alt='profilePic'
             id='user-profile'
-            width={24}
-            height={24}
-            className='rounded-full border-2 border-bakson-main-green'
+            width={25}
+            height={25}
+            className='rounded-full outline-2 outline-bakson-main-green'
             />
           </Link>
         </div>
