@@ -7,11 +7,17 @@ import MessageIcon from '@/components/svg/message';
 import AddIcon from '@/components/svg/add';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import { useEffect, useState } from 'react';
 import clsx from 'clsx';
 import Image from 'next/image';
 
 const Navigation = () => {
   const pathname = usePathname();
+  const [activePath, setActivePath] = useState(pathname);
+
+  useEffect(() => {
+    setActivePath(pathname);
+  }, [pathname]);
 
   return (
     <div className="fixed md:top-0 bottom-0 left-0 z-10 w-full h-fit">
@@ -36,28 +42,28 @@ const Navigation = () => {
           <li><Link href="#">Contact</Link></li>
         </ul>
         <div className="flex flex-row items-center justify-between">
-          <Link className={clsx('p-3 mx-2 md:hidden flex svg-container hover:bg-bakson-milk rounded-full', {
-            'bg-bakson-milk svg-hold': pathname === "/"
+          <Link className={clsx('p-3 mx-2 md:hidden flex svg-container hover:bg-bakson-main-green/10 rounded-full', {
+            'svg-hold': activePath === "/"
           })} 
           href="../">
             <HomeIcon className="fill-blue" width="24" height="24" />
           </Link>
-          <Link className={clsx('p-3 mx-2 md:hidden flex svg-container hover:bg-bakson-milk rounded-full', {
-            'bg-bakson-milk svg-hold': pathname === "/message"
+          <Link className={clsx('p-3 mx-2 md:hidden flex svg-container hover:bg-bakson-main-green/10 rounded-full', {
+            'svg-hold': activePath === "/message"
           })} 
           href="../message">
             <MessageIcon className="fill-blue" width="24" height="24" />
           </Link>
-          <Link className={clsx('p-3 mx-2 md:hidden flex svg-container hover:bg-bakson-milk rounded-full', {
-            'bg-bakson-milk svg-hold': pathname === "/sell"
+          <Link className={clsx('mx-2 md:hidden flex svg-container hover:bg-bakson-main-green/10 rounded-full', {
+            'svg-hold': activePath === "/sell"
           })} 
           href="../sell">
             <AddIcon className="fill-blue" width="35" height="35" />
           </Link>
 
           <div className='flex flex-row items-center justify-center'><input type="search" name="searchFor" id="SearchId" className='focus:border-none border border-bakson-main-green hidden md:flex' placeholder='4 bedroom duplex for sale in jabi'/>
-            <div className={clsx('p-3 mx-2 svg-container hover:bg-bakson-milk w-fit rounded-full', {
-                'bg-bakson-milk svg-hold': pathname === "/search"
+            <div className={clsx('p-3 mx-2 svg-container hover:bg-bakson-main-green/10 w-fit rounded-full', {
+                'svg-hold': activePath === "/search"
               })} >
               <Link href="../search">
                 <Search className="fill-blue" width="24" height="24" />
@@ -65,8 +71,8 @@ const Navigation = () => {
             </div>
           </div>
           
-          <Link className={clsx('p-3 mx-2 svg-container w-fit hover:bg-bakson-milk rounded-full', {
-            'bg-bakson-milk svg-hold': pathname === "/profile"
+          <Link className={clsx('p-3 mx-2 svg-container w-fit rounded-full', {
+            'svg-hold': activePath === "/profile"
           })} 
           href="../profile">
             {/* <ProSvg className="fill-blue" width="22" height="22" /> */}
