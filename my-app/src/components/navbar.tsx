@@ -39,13 +39,13 @@ const Navigation = () => {
             'bg-bakson-milk svg-hold': pathname === "/"
           })} 
           href="../">
-            <HomeIcon className="fill-blue" width="22" height="22" />
+            <HomeIcon className="fill-blue" width="24" height="24" />
           </Link>
           <Link className={clsx('p-3 mx-2 md:hidden flex svg-container hover:bg-bakson-milk rounded-full', {
             'bg-bakson-milk svg-hold': pathname === "/message"
           })} 
           href="../message">
-            <MessageIcon className="fill-blue" width="22" height="22" />
+            <MessageIcon className="fill-blue" width="24" height="24" />
           </Link>
           <Link className={clsx('p-3 mx-2 md:hidden flex svg-container hover:bg-bakson-milk rounded-full', {
             'bg-bakson-milk svg-hold': pathname === "/sell"
@@ -59,7 +59,7 @@ const Navigation = () => {
                 'bg-bakson-milk svg-hold': pathname === "/search"
               })} >
               <Link href="../search">
-                <Search className="fill-blue" width="22" height="22" />
+                <Search className="fill-blue" width="24" height="24" />
               </Link>
             </div>
           </div>
@@ -68,7 +68,7 @@ const Navigation = () => {
             'bg-bakson-milk svg-hold': pathname === "/profile"
           })} 
           href="../profile">
-            <ProSvg className="fill-blue" width="20" height="20" />
+            <ProSvg className="fill-blue" width="22" height="22" />
           </Link>
         </div>
       </nav>       
