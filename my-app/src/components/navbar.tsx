@@ -43,7 +43,7 @@ const Navigation = () => {
         </ul>
         <div className="flex flex-row items-center justify-between">
           <Link className={clsx('p-3 mx-2 md:hidden flex svg-container hover:bg-bakson-main-green/10 rounded-full', {
-            'svg-hold': activePath === "/"
+            'svg-hold bg-bakson-main-green/10': activePath === "/"
           })} 
           href="../">
             <HomeIcon className="fill-blue" width="24" height="24" />
