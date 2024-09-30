@@ -2,9 +2,9 @@
 import React from 'react';
 import ProSvg from '@/components/svg/profile';
 import Search from '@/components/svg/search';
-import HomeIcon from './svg/home';
-import MessageIcon from './svg/message';
-import AddIcon from './svg/add';
+import HomeIcon from '@/components/svg/home';
+import MessageIcon from '@/components/svg/message';
+import AddIcon from '@/components/svg/add';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import clsx from 'clsx';
