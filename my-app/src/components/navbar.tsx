@@ -4,7 +4,7 @@ import ProSvg from '@/components/svg/profile';
 import Search from '@/components/svg/search';
 import HomeIcon from './svg/home';
 import MessageIcon from './svg/message';
-import AddIcon from './svg/Add';
+import AddIcon from './svg/add';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import clsx from 'clsx';
