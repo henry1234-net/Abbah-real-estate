@@ -2,7 +2,7 @@ import React from 'react'
 
 const search = () => {
   return (
-    <div>search</div>
+    <div className='px-3 pt-6'>search</div>
   )
 }
 

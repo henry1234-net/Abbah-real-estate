@@ -31,7 +31,7 @@ export default function LoginPage() {
 
   return (
     <div className='max-w-screen relative'>
-      <div className='bg-bakson-main-green flex md:flex-row flex-col relative rounded-md z-0 p-3 w-full md:h-screen h-fit'>
+      <div className='bg-bakson-main-green flex md:flex-row flex-col relative rounded-b-md z-0 p-3 w-full md:h-screen h-fit'>
         <div className="md:w-1/2 h-full md:mt-[4%] p-4 md:relative">
           <h2 className='text-bakson-milk md:text-[40px] text-[30px] md:text-left text-center font-normal'>
             Find your way <span className='text-bakson-milk font-bold'>Home</span> with us

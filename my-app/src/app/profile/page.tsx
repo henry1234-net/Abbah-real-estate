@@ -3,7 +3,7 @@ import Navigation from '@/components/navbar'
 
 const Profile = () => {
   return (
-    <div>
+    <div className='px-3 pt-6'>
       Profile
     </div>
   )

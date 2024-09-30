@@ -37,11 +37,11 @@ const Navigation = () => {
               </div>
             </li>
           </div>
-          <li><Link href="#">About Us</Link></li>
-          <li><Link href="#">Services</Link></li>
-          <li><Link href="#">Contact</Link></li>
+          <li><Link href="../about">About Us</Link></li>
+          <li><Link href="../service">Services</Link></li>
+          <li><Link href="../contact">Contact</Link></li>
         </ul>
-        <div className="flex flex-row items-center justify-around w-full">
+        <div className="flex flex-row items-center justify-around w-full md:w-fit">
           <Link className={clsx('p-3 mx-2 md:hidden flex svg-container hover:bg-bakson-main-green/10 rounded-full', {
             'svg-hold bg-bakson-main-green/10': activePath === "/"
           })} 
