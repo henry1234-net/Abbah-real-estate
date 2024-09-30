@@ -8,6 +8,7 @@ import AddIcon from '@/components/svg/add';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import clsx from 'clsx';
+import Image from 'next/image';
 
 const Navigation = () => {
   const pathname = usePathname();
@@ -68,7 +69,15 @@ const Navigation = () => {
             'bg-bakson-milk svg-hold': pathname === "/profile"
           })} 
           href="../profile">
-            <ProSvg className="fill-blue" width="22" height="22" />
+            {/* <ProSvg className="fill-blue" width="22" height="22" /> */}
+            <Image
+            src="/sunJinWoo.png"
+            alt='profilePic'
+            id='user-profile'
+            width={24}
+            height={24}
+            className='rounded-full border-2 border-bakson-main-green'
+            />
           </Link>
         </div>
       </nav>       
